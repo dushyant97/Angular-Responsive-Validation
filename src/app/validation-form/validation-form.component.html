@@ -1,0 +1,31 @@
+<fieldset class="border p-2">
+  <legend  class="w-auto">LOGIN FORM</legend>
+  <div *ngIf = "condition">
+    <form name ="Login">
+      <div *ngIf = "warning" class="alert alert-danger alert-dismissible">  
+        Invalid {{input}}
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+      </div>
+        Name:
+        <input placeholder="Enter your username" name ="name" type="text">
+        <br><br>
+        Password: 
+        <input placeholder="Enter your password" name= "pass" type = "password">
+        <br><br>
+        {{captcha}}:
+        <input placeholder="Enter capthca" name= "captcha" type = "text">
+        <br><br>
+        <button type="button" (click)="mysubmit()">Submit</button>
+      </form>
+      <p id="first"></p>
+  </div>
+  <div *ngIf = "!condition" name= "result">
+    <table>
+      <tr><td> The username is </td> <td> {{parameter1}}</td> </tr>
+      <tr><td> The password is </td> <td> {{parameter2}} </td></tr>
+      <tr><td> The first name is </td> <td> {{parameter3}}</td> </tr>
+      <tr><td> The last name is </td> <td> {{parameter4}} </td></tr>
+      <tr><td> The age is</td> <td>{{parameter5}} years old</td> </tr>
+      </table>
+  </div>
+  </fieldset>

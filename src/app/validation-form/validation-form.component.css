@@ -1,0 +1,36 @@
+form{
+    align-content: center;
+    text-align: center;
+}
+
+.result{
+    align-content: center;
+    text-align: center;
+}
+
+table{
+    width: 800px;
+    height:250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  table tr{
+    background-color: #f1f1f1;
+  }
+  
+#captcha{
+        align-content: center;
+        text-align: center;
+  }
+
+.warning{
+      color:red;
+
+    }
