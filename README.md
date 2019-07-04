@@ -1,1 +1,1 @@
-Basic Form Validation and a Responsive Webpage in Angular
+This project was generated with Angular CLI version 7.3.9.
